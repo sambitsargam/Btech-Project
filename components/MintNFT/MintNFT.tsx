@@ -21,7 +21,12 @@ import Link from 'next/link';
 import {useContract} from "../../hooks/useContract";
 import {useEffect, useState} from "react";
 // return functional component with button that mints nft
-import { Button } from '@chakra-ui/react'
+// Remove the duplicate import statement for Button
+// import { Button } from '@chakra-ui/react';
+
+// Keep the existing import statement for Button from '@mantine/core'
+// Remove the duplicate import statement for Button
+// import { Button } from '@mantine/core';
 import { useAccount } from 'wagmi'
 import axios from 'axios'
 
