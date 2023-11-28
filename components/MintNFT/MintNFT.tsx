@@ -30,7 +30,7 @@ import {useEffect, useState} from "react";
 import { useAccount } from 'wagmi'
 import axios from 'axios'
 
-export default function MintButton(props) {
+export default function MintButton(props: { caseObj: { name: any; description: any; report: any; grade1: any; grade2: any; card: any; }; }) {
 	const { address, isConnecting, isDisconnected } = useAccount()
 	//if (isConnecting) return <div>Connecting…</div>
 	//if (isDisconnected) return <div>Disconnected</div>
